@@ -345,7 +345,7 @@
         <!-- <a href="https://www.tiktok.com/@genplaystv" target="_blank" class="tiktok"> <i class="bx bxl-tiktok"></i></a> -->
       </div>
       <div class="copyright">
-        &copy; 2024 <strong><span>Genald Paulo</span></strong>. All Rights Reserved
+        &copy; <span id="currentYear"></span> <strong><span>Genald Paulo</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -369,21 +369,18 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    // Function to calculate age based on birthday
-    function calculateAge(birthday) {
-      var today = new Date();
-      var birthDate = new Date(birthday);
-      var age = today.getFullYear() - birthDate.getFullYear();
-      var month = today.getMonth() - birthDate.getMonth();
-      if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-      }
-      return age;
-    }
+    // Calculate age
+    var birthday = new Date("1998-01-30");
+    var age = new Date(new Date() - birthday).getFullYear() - 1970;
   
-    // Get the age and update the HTML
-    var age = calculateAge("1998-01-30");
+    // Update HTML with calculated age
     document.getElementById("age").innerText = age;
+  
+    // Get current year
+    var currentYear = new Date().getFullYear();
+  
+    // Update HTML with current year
+    document.getElementById("currentYear").innerText = currentYear;
   </script>
 
 </body>
