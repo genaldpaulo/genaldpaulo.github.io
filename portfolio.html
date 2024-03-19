@@ -728,52 +728,27 @@
     </main>
     <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <h3>Genald Paulo</h3>
-        <p>If you require any further information, feel free to contact me.</p>
-        <div class="social-links">
-          <a
-            href="https://www.facebook.com/gnld.dgzmn/"
-            target="_blank"
-            class="facebook"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/genaldpaulo/"
-            target="_blank"
-            class="instagram"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a
-            href="https://join.skype.com/invite/xtR4OEyWf3he"
-            target="_blank"
-            class="google-plus"
-            ><i class="bx bxl-skype"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/genald-paulo"
-            target="_blank"
-            class="linkedin"
-          >
-            <i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://www.tiktok.com/@genplaystv"
-            target="_blank"
-            class="tiktok"
-          >
-            <i class="bx bxl-tiktok"></i
-          ></a>
-        </div>
-        <div class="copyright">
-          &copy; 2022 <strong><span>Genald Paulo</span></strong
-          >. All Rights Reserved
-        </div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Genald Paulo</h3>
+      <p> If you require any further information, feel free to contact me.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/gnld.dgzmn/" target="_blank" class="facebook"><i
+            class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/genaldpaulo/" target="_blank" class="instagram"><i
+            class="bx bxl-instagram"></i></a>
+        <a href="https://join.skype.com/invite/yrMoBvpkL05j" target="_blank" class="google-plus"><i
+            class="bx bxl-skype"></i></a>
+        <a href="https://www.linkedin.com/in/genald-paulo" target="_blank" class="linkedin"> <i
+            class="bx bxl-linkedin"></i></a>
+        <!-- <a href="https://www.tiktok.com/@genplaystv" target="_blank" class="tiktok"> <i class="bx bxl-tiktok"></i></a> -->
       </div>
-    </footer>
-    <!-- End Footer -->
+      <div class="copyright">
+        &copy; <span id="currentYear"></span> <strong><span>Genald Paulo</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
     <div id="preloader"></div>
     <a
@@ -795,5 +770,14 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      // Get current year
+      var currentYear = new Date().getFullYear();
+    
+      // Update HTML with current year
+      document.getElementById("currentYear").innerText = currentYear;
+    </script>
+    
   </body>
 </html>
